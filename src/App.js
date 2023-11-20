@@ -6,7 +6,7 @@ function Profile({
   profession,
   awards,
   discovery,
-  imageSize = 100
+  imageSize = 100,
 }) {
   return (
     <section className="profile">
@@ -36,27 +36,31 @@ function Profile({
 
 export default function Gallery() {
   return (
-    <div>
-      <h1>Científicos Notables</h1>
-      <Profile
-        imageId="szV5sdG"
-        name="Maria Skłodowska-Curie"
-        profession="física y química"
-        discovery="polonio (elemento químico)"
-        awards={[
-          "Premio Nobel de Física",
-          "Premio Nobel de Química",
-          "Medalla Davy",
-          "Medalla Matteucci"
-        ]}
-      />
-      <Profile
-        imageId="YfeOqp2"
-        name="Katsuko Saruhashi"
-        profession="geoquímico"
-        discovery="un método para medir el dióxido de carbono en el agua de mar"
-        awards={["Premio Miyake de geoquímica", "Premio Tanaka"]}
-      />
+    <div className="container">
+      <div className="title-container">
+        <h1>Científicos Notables</h1>
+      </div>
+      <div className="cards-container">
+        <Profile
+          imageId="szV5sdG"
+          name="Maria Skłodowska-Curie"
+          profession="física y química"
+          discovery="polonio (elemento químico)"
+          awards={[
+            "Premio Nobel de Física",
+            "Premio Nobel de Química",
+            "Medalla Davy",
+            "Medalla Matteucci",
+          ]}
+        />
+        <Profile
+          imageId="YfeOqp2"
+          name="Katsuko Saruhashi"
+          profession="geoquímico"
+          discovery="un método para medir el dióxido de carbono en el agua de mar"
+          awards={["Premio Miyake de geoquímica", "Premio Tanaka"]}
+        />
+      </div>
     </div>
   );
 }
