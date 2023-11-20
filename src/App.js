@@ -6,7 +6,7 @@ function Profile({
   profession,
   awards,
   discovery,
-  imageSize = 70
+  imageSize = 100
 }) {
   return (
     <section className="profile">
