@@ -1,13 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
 body {
+  font-family: "Poppins", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+.avatar {
+  margin: 5px;
+  border-radius: 50%;
+  min-height: 70px;
+}
+.profile {
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  /* color:#fff; */
+  background: rgb(237, 196, 8);
+  background: linear-gradient(
+    90deg,
+    rgba(237, 196, 8, 1) 0%,
+    rgba(237, 232, 55, 1) 30%,
+    rgba(211, 255, 0, 1) 100%
+  );
+}
+
+
+
+h1,
+h2 {
+  margin: 5px;
+}
+h1 {
+  /* margin-bottom: 10px; */
+}
+ul {
+  padding: 0px 10px 0px 20px;
+}
+li {
+  margin: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta esto según tus necesidades para centrar verticalmente */
+  }
+
+  .profile {
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .profile ul {
+    list-style: none;
+  }
+
+  .title-container {
+    margin-top: 7rem;
+    padding-left: 1rem; 
+    height: 3.25rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .container{
+    height: 1200px;
+    background-color: violet;
+  }
+
 }
